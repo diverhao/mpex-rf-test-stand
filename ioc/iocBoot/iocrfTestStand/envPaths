@@ -1,4 +1,0 @@
-epicsEnvSet("IOC","iocrfTestStand")
-epicsEnvSet("TOP","/Users/1h7/projects/mpex-rf-test-stand/epics/ioc")
-epicsEnvSet("EPICS_BASE","/Users/1h7/projects/mpex-rf-test-stand/epics/ioc/../epics-base")
-epicsEnvSet("ETHER_IP","/Users/1h7/projects/mpex-rf-test-stand/epics/ioc/../ether_ip")

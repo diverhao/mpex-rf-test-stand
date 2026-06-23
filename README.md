@@ -13,6 +13,18 @@ python -m pip install --upgrade pip
 pip install pyepics
 ```
 
+## Set up EPICS
+
+```
+make
+```
+
+You can clean up the make by running
+
+```
+make distclean
+```
+
 ## Run EPICS IOC
 
 The EPICS IOC folder is located at 

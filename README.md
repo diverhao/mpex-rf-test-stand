@@ -15,6 +15,8 @@ pip install pyepics
 
 ## Set up EPICS
 
+Go to the top folder of this repo.
+
 ```
 make
 ```
@@ -27,7 +29,7 @@ make distclean
 
 ## Run EPICS IOC
 
-The EPICS IOC folder is located at 
+The EPICS IOC folder is 
 
 ```
 ioc

@@ -1,7 +1,7 @@
 
 TOP = .
 
-SUBDIRS := epics-base ioc ether_ip
+SUBDIRS := epics-base ether_ip ioc
 APP_DISTCLEAN_SUBDIRS := ioc ether_ip
 DISTCLEAN_SUBDIRS := $(APP_DISTCLEAN_SUBDIRS) epics-base
 DISTCLEAN_TARGETS := $(DISTCLEAN_SUBDIRS:%=distclean-%)

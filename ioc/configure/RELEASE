@@ -1,0 +1,2 @@
+EPICS_BASE = $(TOP)/../epics-base
+ETHER_IP = $(TOP)/../ether_ip

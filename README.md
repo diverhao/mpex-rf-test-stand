@@ -18,14 +18,25 @@ pip install pyepics
 Go to the top folder of this repo.
 
 ```
+cd epics-base
+make
+cd ../ether_ip
+make
+cd ../ioc
 make
 ```
 
 You can clean up the make by running
 
 ```
+cd epics-base
+make distclean
+cd ../ether_ip
+make distclean
+cd ../ioc
 make distclean
 ```
+
 
 ## Run EPICS IOC
 

@@ -13,6 +13,10 @@
 dbLoadDatabase "../../dbd/rfTestStand.dbd"
 rfTestStand_registerRecordDeviceDriver(pdbbase) 
 
+# drvEtherIP_init
+# drvEtherIP_define_PLC "stepper_plc", "10.112.2.14", 0
+# EIP_verbosity(10)
+
 ## Load record instances
 dbLoadRecords("../../db/test01.db")
 

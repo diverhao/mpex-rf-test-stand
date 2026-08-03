@@ -1,6 +1,44 @@
+# record(calc, "test01") {
+#     field(INPA, "test01")
+#     field(CALC, "A>10?0:A+1")
+#     field(SCAN, "1 second")
+# }
 
-record(calc, "test01") {
-    field(INPA, "test01")
-    field(CALC, "A>10?0:A+1")
-    field(SCAN, "1 second")
+# record(bo, "SD4840E2:Jog_CW")
+# {
+#     field(DTYP, "EtherIP")
+#     field(OUT,  "@stepper_plc Program:MainProgram.Motor_1_relative_move S 0.1")
+#     field(ZNAM, "Stop")
+#     field(ONAM, "Jog CW")
+# }
+
+# ----------- dummy motor -------------------
+
+record(ao, "Motor:Pos:Set") {
+    field(OMSL, "supervisory")
+    field(FLNK, "Motor:Pos:Sel_")
+}
+
+record(seq, "Motor:Pos:Sel_") {
+    field(LNK0, "Motor:Running PP")
+    field(DO0, "1")
+    field(DLY0, "0")
+    field(LNK1, "Motor:Pos:Read PP")
+    field(DLY1, "3")
+}
+
+record(bi, "Motor:Running") {
+    field(ONAM, "Running")
+    field(ZNAM, "Stopped")
+}
+
+record(ai, "Motor:Pos:Read") {
+    field(INP, "Motor:Pos:Set")
+    field(FLNK, "Motor:Pos:Sel2_")
+}
+
+record(seq, "Motor:Pos:Sel2_") {
+    field(LNK0, "Motor:Running PP")
+    field(DO0, "0")
+    field(DLY0, "0")
 }

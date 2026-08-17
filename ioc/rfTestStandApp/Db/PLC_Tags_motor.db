@@ -1,0 +1,96 @@
+# 
+record(ai, "$(S):Mot:EncPos-Ind") {
+    field(DESC, "Encoder position")
+    field(INP, "@$(PLC) Local:2:I.Ch0Data")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+}
+
+# 
+record(bi, "$(S):Mot:Enbld-Sts") {
+    field(DESC, "Motor Status")
+    field(INP, "@$(PLC) SD4840E2_stepper_driver:I.Motor_1_input.Drive_Is_Enabled")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+}
+
+record(bi, "$(S):Mot:CWMov-Sts") {
+    field(DESC, "Motor Moving")
+    field(INP, "@$(PLC) SD4840E2_stepper_driver:I.Moving_CW")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+}
+
+record(bi, "$(S):Mot:CCWMov-Sts") {
+    field(DESC, "Motor Moving")
+    field(INP, "@$(PLC) SD4840E2_stepper_driver:I.Moving_CCW")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+}
+
+record(bi, "$(S):Mot:MovCmpl-Sts") {
+    field(DESC, "Motor Move complete")
+    field(INP, "@$(PLC) SD4840E2_stepper_driver:I.Move_Complete")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+}
+
+record(bi, "$(S):Mot:Stp-Sts") {
+    field(DESC, "Motor Stopped")
+    field(INP, "@$(PLC) SD4840E2_stepper_driver:I.Stopped")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+}
+
+# 
+record(ao, "$(S):Mot:S-SP") {
+    field(DESC, "Set speed")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+    field(OUT, "@$(PLC) Program.MainProgram.HMI_Set_Speed")
+}
+
+record(ao, "$(S):Mot:Rev-SP") {
+    field(DESC, "Set number of revolutions")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+    field(OUT, "@$(PLC) Program.MainProgram.HMI_Revolutions_Steps")
+}
+
+# 
+record(bo, "$(S):Mot:RelMov-Cmd") {
+    field(DESC, "Start relative motion")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+    field(OUT, "@$(PLC) Program.MainProgram.Motor_1_relative_move")
+}
+
+record(bo, "$(S):Mot:CWJog-Cmd") {
+    field(DESC, "Start Jog clockwise")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+    field(OUT, "@$(PLC) Program.MainProgram.Motor1_jog_CW")
+}
+
+record(bo, "$(S):Mot:CCWJog-Cmd") {
+    field(DESC, "Start jog counterclockwise")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+    field(OUT, "@$(PLC) Program.MainProgram.Motor1_jog_CCW")
+}
+
+record(bo, "$(S):Mot:ErrRst-Cmd") {
+    field(DESC, "Reset errors")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+    field(OUT, "@$(PLC) Program.MainProgram.Motor_1_Reset_Errors")
+}
+
+record(bo, "$(S):Mot_Estop:Pressed-Sts") {
+    field(DESC, "Emergency Stop")
+    field(DTYP, "EtherIP")
+    field(SCAN, ".5 second")
+    field(OUT, "@$(PLC) Program.MainProgram.Motor1_Stop_Button")
+}
+
+

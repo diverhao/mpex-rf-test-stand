@@ -1,0 +1,46 @@
+#  Comment
+#  Comment This is a comment line, you can put anything here
+#  Comment For the first column: "bi" means "binary input", the value is either 0 or 1; "ai" means "analog input", basically a floating point number; "bo" means "binary output"; "ao" means "analog output"
+#  Comment
+#  Comment This column is PV name Description, any text <= 40 characters EPICS query period PLC Tag for input (reading) PV PLC Tag for output (writing) PV human readable text for 0 value human readable text for 1 value severity for 0 value severity for 1 value Unit for "ai"/"ao" record
+#  Comment cannot be empty could, but better not be empty .1/.2/.5/1/2/5/10 second for bi/ai for bo/ao could, but better not be empty could, but better not be empty NO_ALARM/MINOR/MAJOR NO_ALARM/MINOR/MAJOR "bi"/"bo" does not have unit
+#  Comment cannot be empty empty means NO_ALARM empty means NO_ALARM empty if the quantity has no unit
+#  Comment bi example
+record(bi, "$(S):ech_bypassed") {
+    field(DESC, "readback of ECH status")
+    field(SCAN, "1 second")
+    field(INP, "Bypass_statuses[0] B 0")
+    field(ZNAM, "NOT_BYPASSED")
+    field(ONAM, "BYPASSED")
+    field(ZSV, "NO_ALARM")
+    field(OSV, "MINOR")
+}
+
+#  Comment bo example
+record(bo, "$(S):key_pos") {
+    field(DESC, "set key position")
+    field(SCAN, "1 second")
+    field(OUT, "EPICS_Sys_fault_PLC_run_key_pos[0] B 12")
+}
+
+#  Comment ai example
+record(ai, "$(S):hepa_dpress_1") {
+    # readback of hepa differential pressure #1
+    field(DESC, "readback of hepa differential pressure ")
+    field(SCAN, "1 second")
+    field(INP, "EPICS_sfty_to_std_real_tags[0]")
+    field(EGU, "psi")
+}
+
+#  Comment ao example
+record(ao, "$(S):abc") {
+    field(DESC, "set abc")
+    field(SCAN, "1 second")
+    field(OUT, "EPICS_sfty_to_std_real_tags[3]")
+    field(EGU, "psi")
+}
+
+# 
+# 
+#  Comment There are more complicated PVs like mbbi, mbbo, which represents multiple possible values, you can put the necessary information to a separate spreadsheet.
+

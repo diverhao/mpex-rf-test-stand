@@ -19,6 +19,9 @@ rfTestStand_registerRecordDeviceDriver(pdbbase)
 
 ## Load record instances
 dbLoadRecords("../../db/test01.db")
+dbLoadRecords("../../db/PLC_Tags_motor.db", "S=RF_Test,PLC=stpper_plc")
+
+
 
 iocInit()
 

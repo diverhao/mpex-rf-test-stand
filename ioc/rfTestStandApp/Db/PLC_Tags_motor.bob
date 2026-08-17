@@ -1,0 +1,870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>PLC_Tags_motor</name>
+  <class>DEFAULT1</class>
+  <x>55</x>
+  <width>920</width>
+  <height>1000</height>
+  <background_color>
+    <color red="204" green="204" blue="204">
+    </color>
+  </background_color>
+  <grid_visible>false</grid_visible>
+  <grid_color>
+    <color name="Header_Background" red="77" green="77" blue="77">
+    </color>
+  </grid_color>
+  <grid_step_x>15</grid_step_x>
+  <grid_step_y>15</grid_step_y>
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>1</text>
+    <x>10</x>
+    <y>25</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>ai</text>
+    <x>50</x>
+    <y>25</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:EncPos-Ind</text>
+    <x>95</x>
+    <y>25</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:EncPos-Ind</pv_name>
+    <x>410</x>
+    <y>25</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Encoder position</text>
+    <x>680</x>
+    <y>25</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) Local:2:I.Ch0Data</text>
+    <x>1010</x>
+    <y>25</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>2</text>
+    <x>10</x>
+    <y>50</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>bi</text>
+    <x>50</x>
+    <y>50</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:Enbld-Sts</text>
+    <x>95</x>
+    <y>50</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:Enbld-Sts.RVAL</pv_name>
+    <x>410</x>
+    <y>50</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Motor Status</text>
+    <x>680</x>
+    <y>50</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) SD4840E2_stepper_driver:I.Motor_1_input.Drive_Is_Enabled</text>
+    <x>1010</x>
+    <y>50</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>3</text>
+    <x>10</x>
+    <y>75</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>bi</text>
+    <x>50</x>
+    <y>75</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:CWMov-Sts</text>
+    <x>95</x>
+    <y>75</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:CWMov-Sts.RVAL</pv_name>
+    <x>410</x>
+    <y>75</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Motor Moving</text>
+    <x>680</x>
+    <y>75</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) SD4840E2_stepper_driver:I.Moving_CW</text>
+    <x>1010</x>
+    <y>75</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>4</text>
+    <x>10</x>
+    <y>100</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>bi</text>
+    <x>50</x>
+    <y>100</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:CCWMov-Sts</text>
+    <x>95</x>
+    <y>100</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:CCWMov-Sts.RVAL</pv_name>
+    <x>410</x>
+    <y>100</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Motor Moving</text>
+    <x>680</x>
+    <y>100</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) SD4840E2_stepper_driver:I.Moving_CCW</text>
+    <x>1010</x>
+    <y>100</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>5</text>
+    <x>10</x>
+    <y>125</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>bi</text>
+    <x>50</x>
+    <y>125</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:MovCmpl-Sts</text>
+    <x>95</x>
+    <y>125</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:MovCmpl-Sts.RVAL</pv_name>
+    <x>410</x>
+    <y>125</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Motor Move complete</text>
+    <x>680</x>
+    <y>125</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) SD4840E2_stepper_driver:I.Move_Complete</text>
+    <x>1010</x>
+    <y>125</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>6</text>
+    <x>10</x>
+    <y>150</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>bi</text>
+    <x>50</x>
+    <y>150</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:Stp-Sts</text>
+    <x>95</x>
+    <y>150</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:Stp-Sts.RVAL</pv_name>
+    <x>410</x>
+    <y>150</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Motor Stopped</text>
+    <x>680</x>
+    <y>150</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) SD4840E2_stepper_driver:I.Stopped</text>
+    <x>1010</x>
+    <y>150</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>7</text>
+    <x>10</x>
+    <y>175</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>ao</text>
+    <x>50</x>
+    <y>175</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:S-SP</text>
+    <x>95</x>
+    <y>175</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:S-SP</pv_name>
+    <x>410</x>
+    <y>175</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(S):Mot:S-SP</pv_name>
+    <x>540</x>
+    <y>175</y>
+    <height>20</height>
+  </widget>
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Set speed</text>
+    <x>680</x>
+    <y>175</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) Program.MainProgram.HMI_Set_Speed</text>
+    <x>1010</x>
+    <y>175</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>8</text>
+    <x>10</x>
+    <y>200</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>ao</text>
+    <x>50</x>
+    <y>200</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:Rev-SP</text>
+    <x>95</x>
+    <y>200</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:Rev-SP</pv_name>
+    <x>410</x>
+    <y>200</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="textentry" version="3.0.0">
+    <name>Text Entry</name>
+    <pv_name>$(S):Mot:Rev-SP</pv_name>
+    <x>540</x>
+    <y>200</y>
+    <height>20</height>
+  </widget>
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Set number of revolutions</text>
+    <x>680</x>
+    <y>200</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) Program.MainProgram.HMI_Revolutions_Steps</text>
+    <x>1010</x>
+    <y>200</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>9</text>
+    <x>10</x>
+    <y>225</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>bo</text>
+    <x>50</x>
+    <y>225</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:RelMov-Cmd</text>
+    <x>95</x>
+    <y>225</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:RelMov-Cmd</pv_name>
+    <x>410</x>
+    <y>225</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(S):Mot:RelMov-Cmd</pv_name>
+    <x>540</x>
+    <y>225</y>
+    <height>20</height>
+  </widget>
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Start relative motion</text>
+    <x>680</x>
+    <y>225</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) Program.MainProgram.Motor_1_relative_move</text>
+    <x>1010</x>
+    <y>225</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>10</text>
+    <x>10</x>
+    <y>250</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>bo</text>
+    <x>50</x>
+    <y>250</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:CWJog-Cmd</text>
+    <x>95</x>
+    <y>250</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:CWJog-Cmd</pv_name>
+    <x>410</x>
+    <y>250</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(S):Mot:CWJog-Cmd</pv_name>
+    <x>540</x>
+    <y>250</y>
+    <height>20</height>
+  </widget>
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Start Jog clockwise</text>
+    <x>680</x>
+    <y>250</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) Program.MainProgram.Motor1_jog_CW</text>
+    <x>1010</x>
+    <y>250</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>11</text>
+    <x>10</x>
+    <y>275</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>bo</text>
+    <x>50</x>
+    <y>275</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:CCWJog-Cmd</text>
+    <x>95</x>
+    <y>275</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:CCWJog-Cmd</pv_name>
+    <x>410</x>
+    <y>275</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(S):Mot:CCWJog-Cmd</pv_name>
+    <x>540</x>
+    <y>275</y>
+    <height>20</height>
+  </widget>
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Start jog counterclockwise</text>
+    <x>680</x>
+    <y>275</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) Program.MainProgram.Motor1_jog_CCW</text>
+    <x>1010</x>
+    <y>275</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>12</text>
+    <x>10</x>
+    <y>300</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>bo</text>
+    <x>50</x>
+    <y>300</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot:ErrRst-Cmd</text>
+    <x>95</x>
+    <y>300</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot:ErrRst-Cmd</pv_name>
+    <x>410</x>
+    <y>300</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(S):Mot:ErrRst-Cmd</pv_name>
+    <x>540</x>
+    <y>300</y>
+    <height>20</height>
+  </widget>
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Reset errors</text>
+    <x>680</x>
+    <y>300</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) Program.MainProgram.Motor_1_Reset_Errors</text>
+    <x>1010</x>
+    <y>300</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>13</text>
+    <x>10</x>
+    <y>325</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>bo</text>
+    <x>50</x>
+    <y>325</y>
+    <width>60</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>$(S):Mot_Estop:Pressed-Sts</text>
+    <x>95</x>
+    <y>325</y>
+    <width>300</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>$(S):Mot_Estop:Pressed-Sts</pv_name>
+    <x>410</x>
+    <y>325</y>
+    <width>120</width>
+    <height>20</height>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="combo" version="2.0.0">
+    <name>Combo Box</name>
+    <pv_name>$(S):Mot_Estop:Pressed-Sts</pv_name>
+    <x>540</x>
+    <y>325</y>
+    <height>20</height>
+  </widget>
+
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>Emergency Stop</text>
+    <x>680</x>
+    <y>325</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  
+  <widget type="label" version="2.0.0">
+    <name>Label_2</name>
+    <text>@$(PLC) Program.MainProgram.Motor1_Stop_Button</text>
+    <x>1010</x>
+    <y>325</y>
+    <width>290</width>
+    <height>20</height>
+    <wrap_words>false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+
+
+</display>
+

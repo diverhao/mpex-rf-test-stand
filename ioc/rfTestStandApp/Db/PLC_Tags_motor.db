@@ -46,51 +46,44 @@ record(bi, "$(S):Mot:Stp-Sts") {
 record(ao, "$(S):Mot:S-SP") {
     field(DESC, "Set speed")
     field(DTYP, "EtherIP")
-    field(SCAN, ".5 second")
-    field(OUT, "@$(PLC) Program.MainProgram.HMI_Set_Speed")
+    field(OUT, "@$(PLC) Program.MainProgram.HMI_Set_Speed S 0.5")
 }
 
 record(ao, "$(S):Mot:Rev-SP") {
     field(DESC, "Set number of revolutions")
     field(DTYP, "EtherIP")
-    field(SCAN, ".5 second")
-    field(OUT, "@$(PLC) Program.MainProgram.HMI_Revolutions_Steps")
+    field(OUT, "@$(PLC) Program.MainProgram.HMI_Revolutions_Steps S 0.5")
 }
 
 # 
 record(bo, "$(S):Mot:RelMov-Cmd") {
     field(DESC, "Start relative motion")
     field(DTYP, "EtherIP")
-    field(SCAN, ".5 second")
-    field(OUT, "@$(PLC) Program.MainProgram.Motor_1_relative_move")
+    field(OUT, "@$(PLC) Program.MainProgram.Motor_1_relative_move S 0.5")
 }
 
 record(bo, "$(S):Mot:CWJog-Cmd") {
     field(DESC, "Start Jog clockwise")
     field(DTYP, "EtherIP")
-    field(SCAN, ".5 second")
-    field(OUT, "@$(PLC) Program.MainProgram.Motor1_jog_CW")
+    field(OUT, "@$(PLC) Program.MainProgram.Motor1_jog_CW S 0.5")
 }
 
 record(bo, "$(S):Mot:CCWJog-Cmd") {
     field(DESC, "Start jog counterclockwise")
     field(DTYP, "EtherIP")
-    field(SCAN, ".5 second")
-    field(OUT, "@$(PLC) Program.MainProgram.Motor1_jog_CCW")
+    field(OUT, "@$(PLC) Program.MainProgram.Motor1_jog_CCW S 0.5")
 }
 
 record(bo, "$(S):Mot:ErrRst-Cmd") {
     field(DESC, "Reset errors")
     field(DTYP, "EtherIP")
-    field(SCAN, ".5 second")
-    field(OUT, "@$(PLC) Program.MainProgram.Motor_1_Reset_Errors")
+    field(OUT, "@$(PLC) Program.MainProgram.Motor_1_Reset_Errors S 0.5")
 }
 
 record(bo, "$(S):Mot_Estop:Pressed-Sts") {
     field(DESC, "Emergency Stop")
     field(DTYP, "EtherIP")
-    field(SCAN, ".5 second")
-    field(OUT, "@$(PLC) Program.MainProgram.Motor1_Stop_Button")
+    field(OUT, "@$(PLC) Program.MainProgram.Motor1_Stop_Button S 0.5")
 }
 
 

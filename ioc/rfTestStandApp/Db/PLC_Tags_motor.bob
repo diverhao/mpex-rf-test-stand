@@ -442,7 +442,7 @@
   
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
-    <text>@$(PLC) Program.MainProgram.HMI_Set_Speed</text>
+    <text>@$(PLC) Program.MainProgram.HMI_Set_Speed S 0.5</text>
     <x>1010</x>
     <y>175</y>
     <width>290</width>
@@ -511,7 +511,7 @@
   
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
-    <text>@$(PLC) Program.MainProgram.HMI_Revolutions_Steps</text>
+    <text>@$(PLC) Program.MainProgram.HMI_Revolutions_Steps S 0.5</text>
     <x>1010</x>
     <y>200</y>
     <width>290</width>
@@ -580,7 +580,7 @@
   
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
-    <text>@$(PLC) Program.MainProgram.Motor_1_relative_move</text>
+    <text>@$(PLC) Program.MainProgram.Motor_1_relative_move S 0.5</text>
     <x>1010</x>
     <y>225</y>
     <width>290</width>
@@ -649,7 +649,7 @@
   
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
-    <text>@$(PLC) Program.MainProgram.Motor1_jog_CW</text>
+    <text>@$(PLC) Program.MainProgram.Motor1_jog_CW S 0.5</text>
     <x>1010</x>
     <y>250</y>
     <width>290</width>
@@ -718,7 +718,7 @@
   
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
-    <text>@$(PLC) Program.MainProgram.Motor1_jog_CCW</text>
+    <text>@$(PLC) Program.MainProgram.Motor1_jog_CCW S 0.5</text>
     <x>1010</x>
     <y>275</y>
     <width>290</width>
@@ -787,7 +787,7 @@
   
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
-    <text>@$(PLC) Program.MainProgram.Motor_1_Reset_Errors</text>
+    <text>@$(PLC) Program.MainProgram.Motor_1_Reset_Errors S 0.5</text>
     <x>1010</x>
     <y>300</y>
     <width>290</width>
@@ -856,7 +856,7 @@
   
   <widget type="label" version="2.0.0">
     <name>Label_2</name>
-    <text>@$(PLC) Program.MainProgram.Motor1_Stop_Button</text>
+    <text>@$(PLC) Program.MainProgram.Motor1_Stop_Button S 0.5</text>
     <x>1010</x>
     <y>325</y>
     <width>290</width>

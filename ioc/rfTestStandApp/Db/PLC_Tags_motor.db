@@ -19,6 +19,8 @@ record(bi, "$(S):Mot:CWMov-Sts") {
     field(INP, "@$(PLC) SD4840E2_stepper_driver:I.Moving_CW")
     field(DTYP, "EtherIP")
     field(SCAN, ".5 second")
+    field(ZNAM, "NotMove")
+    field(ONAM, "CW")
 }
 
 record(bi, "$(S):Mot:CCWMov-Sts") {
@@ -26,6 +28,8 @@ record(bi, "$(S):Mot:CCWMov-Sts") {
     field(INP, "@$(PLC) SD4840E2_stepper_driver:I.Moving_CCW")
     field(DTYP, "EtherIP")
     field(SCAN, ".5 second")
+    field(ZNAM, "NotMove")
+    field(ONAM, "CCW")
 }
 
 record(bi, "$(S):Mot:MovCmpl-Sts") {
@@ -33,6 +37,8 @@ record(bi, "$(S):Mot:MovCmpl-Sts") {
     field(INP, "@$(PLC) SD4840E2_stepper_driver:I.Move_Complete")
     field(DTYP, "EtherIP")
     field(SCAN, ".5 second")
+    field(ZNAM, "NotComplete")
+    field(ONAM, "Complete")
 }
 
 record(bi, "$(S):Mot:Stp-Sts") {
@@ -40,6 +46,8 @@ record(bi, "$(S):Mot:Stp-Sts") {
     field(INP, "@$(PLC) SD4840E2_stepper_driver:I.Stopped")
     field(DTYP, "EtherIP")
     field(SCAN, ".5 second")
+    field(ZNAM, "NotStopped")
+    field(ONAM, "Stopped")
 }
 
 # 
@@ -47,12 +55,14 @@ record(ao, "$(S):Mot:S-SP") {
     field(DESC, "Set speed")
     field(DTYP, "EtherIP")
     field(OUT, "@$(PLC) Program.MainProgram.HMI_Set_Speed S 0.5")
+    field(EGU, "Step/s")
 }
 
 record(ao, "$(S):Mot:Rev-SP") {
     field(DESC, "Set number of revolutions")
     field(DTYP, "EtherIP")
     field(OUT, "@$(PLC) Program.MainProgram.HMI_Revolutions_Steps S 0.5")
+    field(EGU, "Step")
 }
 
 # 
@@ -60,30 +70,35 @@ record(bo, "$(S):Mot:RelMov-Cmd") {
     field(DESC, "Start relative motion")
     field(DTYP, "EtherIP")
     field(OUT, "@$(PLC) Program.MainProgram.Motor_1_relative_move S 0.5")
+    field(ONAM, "Start")
 }
 
 record(bo, "$(S):Mot:CWJog-Cmd") {
     field(DESC, "Start Jog clockwise")
     field(DTYP, "EtherIP")
     field(OUT, "@$(PLC) Program.MainProgram.Motor1_jog_CW S 0.5")
+    field(ONAM, "StartJogCW")
 }
 
 record(bo, "$(S):Mot:CCWJog-Cmd") {
     field(DESC, "Start jog counterclockwise")
     field(DTYP, "EtherIP")
     field(OUT, "@$(PLC) Program.MainProgram.Motor1_jog_CCW S 0.5")
+    field(ONAM, "StartJogCCW")
 }
 
 record(bo, "$(S):Mot:ErrRst-Cmd") {
     field(DESC, "Reset errors")
     field(DTYP, "EtherIP")
     field(OUT, "@$(PLC) Program.MainProgram.Motor_1_Reset_Errors S 0.5")
+    field(ONAM, "Reset")
 }
 
 record(bo, "$(S):Mot_Estop:Pressed-Sts") {
     field(DESC, "Emergency Stop")
     field(DTYP, "EtherIP")
     field(OUT, "@$(PLC) Program.MainProgram.Motor1_Stop_Button S 0.5")
+    field(ONAM, "Stop")
 }
 
 
